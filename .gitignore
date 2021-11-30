@@ -1,0 +1,19 @@
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+
+
+*.iml
+
+## Directory-based project format:
+.idea/
+.DS_Store
+celerybeat-schedule
+## File-based project format:
+*.ipr
+*.iws
+
+# Environments
+.env
