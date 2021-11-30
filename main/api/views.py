@@ -12,7 +12,7 @@ class BitCoinToUSDViewSet(viewsets.ModelViewSet):
     queryset = BitCoinToUSD.objects.all().order_by('-id')
     serializer_class = BitCoinToUSDSerializer
 
-    def retrieve(self, request, *args, **kwargs):
+    def create(self, request, *args, **kwargs):
         success = get_bitcoin_exchange()
         if success:
             new_exchanges = self.get_queryset()
